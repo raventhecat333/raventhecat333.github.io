@@ -1,7 +1,7 @@
 [Adblock Plus 0.7.1]
 !   Rickroll blacklist, http://rickrolldb.com
 !   generated on 03/10/19 08:00:02
-! 240 entries
+! 242 entries
 youtube.com/get_video?video_id=uxIsiTo4VJo
 youtube.com/get_video?video_id=PIMrL4qXtJ0
 youtube.com/get_video?video_id=f2b1D5w82yU
@@ -304,4 +304,6 @@ moourl.com/09773#body
 moourl.com/09773$script
 youtube.com/get_video?video_id=Kmt4wrn1MTk
 youtube.com/get_video?video_id=vvs7cXmVwN8
-!
+bit.ly/urafeg
+youtube.com/watch?v=dQw4w9WgXcQ
+
