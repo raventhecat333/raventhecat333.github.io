@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+}
+body {
+	font-family: Arial, sans-serif;
+}
+h1 {
+	font-size: 15em;
+	font-weight: normal;
+	margin-bottom: 10px;
+	margin-top: 25px;
+	margin-left: 450px;
+}
+h2 {
+	font-weight: normal;
+	margin-left: 450px;
+	margin-bottom: 50px;
+}
+h3 {
+	font-weight: normal;
+	margin-left: 450px;
+}
+img {
+	position: fixed;
+	margin-left: 50px;
+	top: 0px;
+	z-index: -1;
+}
+.content {
+	min-height: calc(100vh - 70px);
+}
+.footer {
+	height: 50px;
+	margin-top: -50px;
+	text-align: center;
+}
