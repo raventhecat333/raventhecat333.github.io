@@ -1,0 +1,16 @@
+.characteristics-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.characteristics-container .characteristic{
+    width: 30%;
+}
+.team-info .image-container img{
+    width: 35%;
+}
+@keyframes sayori-jump{
+    0% { width: 35%; top: 0;}
+    50%{width: 35%; top: -50px;}
+    100%{width: 35%; top: 0;}
+}

@@ -1,0 +1,58 @@
+header h1{
+    font-size: 8rem;
+}
+h2{
+    font-size: 5rem;
+}
+h3{
+    font-size: 4rem
+}
+p, .disclaimer p{
+    font-size: 4.5rem;
+}
+header a{
+    font-size: 3.5rem;
+    width: 15rem;
+}
+.description-section p{
+    line-height: 45px;
+}
+.screenshot-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.screenshot-section .screenshot{
+    width: 50%;
+    height: 200px;
+}
+.team-info{
+    display: flex;
+    flex-direction: row;
+}
+.team-info a{
+    font-size: 3.5rem;
+}
+.team-info .image-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
+.team-info .image-container img{
+    width: 70%;
+}
+@keyframes sayori-jump{
+    0% { width: 70%; top: 0;}
+    50%{width: 70%; top: -50px;}
+    100%{width: 70%; top: 0;}
+}
+.team-info .info-container{
+    width: 50%;
+}
+.footer__info-container .logo-container img{
+    width: 150px;
+}
+.footer__info-container ul li a{
+    font-size: 4rem;
+}

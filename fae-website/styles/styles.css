@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "Sayori";
+    src: url(../resources/fonts/sayori.ttf);
+}
+:root{
+    --sayori-font: "Sayori", cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: var(--sayori-font);
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.5rem
+}
+p{
+    font-size: 2rem;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../resources/img/Sayori_desk_view_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+header .logo{
+    width: 30%;
+    max-width: 40%;
+    margin: .1rem;
+}
+header h1{
+    font-size: 5rem;
+    line-height: 5vw;
+    color: white;
+}
+header p{
+    color: white;
+    margin: 10px;
+}
+header a{
+    background-color: #bcdffd;
+    font-size: 1.5rem;
+    width: 7rem;
+    text-align: center;
+    border-radius: .5rem;
+    box-shadow: 1px 2px 4px rgba(143, 234, 255, .8);
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+}
+header a:hover{
+    color: tomato;
+    background-color: rgb(129, 196, 255);
+    box-shadow: 1px 2px 4px rgba(105, 225, 255, 0.8);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+}
+.description-section{
+    order: 1;
+}
+.description-section h2{
+    display: inline-block;
+    border-bottom: solid 1px #bcdffd;
+    margin-bottom: 10px;
+}
+.description-section h2 span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../resources/icons/bow.png);
+    vertical-align: text-top;
+}
+.description-section p{
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.screenshot-section{
+    order: 2;
+    margin-bottom: 10px;
+}
+.screenshot-section .screenshot{
+    width: 100%;
+    background-color: #bcdffd;
+    height: 150px;
+    border: solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.screenshot-section .screenshot p{
+    font-size: 5rem;
+}
+.characteristic-section{
+    order: 3;
+}
+.team-info{
+    order: 4;
+}
+.characteristics-container{
+    width: 100%
+}
+.characteristic__title, .team-info h2{
+    border-bottom: solid 1px #bcdffd;
+    display: inline-block;
+}
+.team-info{
+    display: flex;
+    flex-direction: column;
+}
+.team-info .image-container{
+    order: 2;
+    width: 40%;
+    align-self: center;
+}
+.team-info .image-container img{
+    position: relative;
+    order: 2;
+    width: 100%;
+}
+.team-info .image-container img:hover{
+    animation-name: sayori-jump;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+}
+@keyframes sayori-jump{
+    0% { width: 100%; top: 0;}
+    50%{width: 100%; top: -20px;}
+    100%{width: 100%; top: 0;}
+}
+.team-info .info-container{
+    order: 1;
+    width: 100%;
+}
+.team-info .info-container .donations{
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.team-info a{
+    font-size: 2rem;
+    color: #3ba4ff;
+}
+.team-info a:hover{
+    color: #107ad6;
+}
+footer{
+    border-top: 2px solid #8ce9ff;
+    background-color: #ecfafe;
+}
+.footer__info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.footer__info-container .logo-container img{
+    width: 100px;
+}
+.footer__info-container ul{
+    align-self: center;
+}
+.footer__info-container ul li{
+    display: inline-block;
+    font-size: 3rem;
+    margin: 0 10px;
+}
+.footer__info-container ul li span{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+.twitter{
+    background-image: url(../resources/icons/twitter.png);
+}
+.discord{
+    background-image: url(../resources/icons/discord.png);
+}
+.footer__info-container ul li a{
+    color: #3ba4ff;
+}
+.footer__info-container ul li a:hover{
+    color: #107ad6;
+}
+.disclaimer{
+    padding: 0 20px;
+    margin: 10px 0;
+}
+.disclaimer p{
+    font-size: 2rem;
+}
+.disclaimer a{
+    color: #3ba4ff;
+}
+.disclaimer a:hover{
+    color: #107ad6;
+}
