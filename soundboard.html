@@ -13,7 +13,7 @@
  	<button id="e" onclick="document.getElementById('sound2').play()">error "e"</button>
 	<button id="c" onclick="document.getElementById('sound3').play()">curb "c"</button>
 	<button id="kc" onclick="document.getElementById('sound4').play()">king crimson "k"</button>
-	<button id="tb" onclick="document.getElementById('sound5').play()">tacobell "t"</button>
+	<button id="b" onclick="document.getElementById('sound5').play()">tacobell "b"</button>
 	
 	<input id="myInput" type="reset" value="reset">
 <script>
@@ -28,7 +28,7 @@ var input = document.getElementById("myInput");
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 84) {
    event.preventDefault();
-   document.getElementById("tb").click();
+   document.getElementById("t").click();
   }
 });
 </script>
