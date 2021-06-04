@@ -24,6 +24,13 @@ input.addEventListener("keyup", function(event) {
    document.getElementById("kc").click();
   }
 });
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 84) {
+   event.preventDefault();
+   document.getElementById("tb").click();
+  }
+});
 </script>
 
 </body>
