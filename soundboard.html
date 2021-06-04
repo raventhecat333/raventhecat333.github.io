@@ -9,10 +9,22 @@
 	<audio id="sound3" src="sound/curb.mp3"></audio>
 	<audio id="sound4" src="sound/kingcrimson.mp3"></audio>
 	<audio id="sound5" src="sound/tacobell.mp3"></audio>
-	<button onclick="document.getElementById('sound1').play()">timestop</button>
- 	<button onclick="document.getElementById('sound2').play()">error</button>
-	<button onclick="document.getElementById('sound3').play()">curb</button>
-	<button onclick="document.getElementById('sound4').play()">king crimson</button>
-	<button onclick="document.getElementById('sound5').play()">tacobell</button>
+	<button id="t" onclick="document.getElementById('sound1').play()">timestop "t"</button>
+ 	<button id="e" onclick="document.getElementById('sound2').play()">error "e"</button>
+	<button id="c" onclick="document.getElementById('sound3').play()">curb "c"</button>
+	<button id="kc" onclick="document.getElementById('sound4').play()">king crimson "k"</button>
+	<button id="tb" onclick="document.getElementById('sound5').play()">tacobell "t"</button>
+	
+	<input id="myInput" value="press button here to trigger sound">
+<script>
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 75) {
+   event.preventDefault();
+   document.getElementById("kc").click();
+  }
+});
+</script>
+
 </body>
 </html>
