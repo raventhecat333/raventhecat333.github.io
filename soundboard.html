@@ -18,7 +18,7 @@
 	<input id="myInput" type="reset" value="reset">
 	</form>
 <script>
-var input = document.getElementById("myInput");
+```var input = document.getElementById("myInput");
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 75) {
    event.preventDefault();
@@ -31,7 +31,13 @@ input.addEventListener("keyup", function(event) {
    event.preventDefault();
    document.getElementById("t").click();
   }
-});
+});```
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.ctrlKey && evt.keyCode == 90) {
+        alert("Ctrl-Z");
+    }
+};
 
 </script>
 
