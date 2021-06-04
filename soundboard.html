@@ -16,10 +16,10 @@
 		<button id="kc" onclick="document.getElementById('sound4').play()">king crimson "k"</button>
 		<button id="b" onclick="document.getElementById('sound5').play()">tacobell "b"</button>
 		<form>
-			<input id="myInput" type="reset" value="reset">
+			<input id="myInput" type="reset" value="...">
 		</form>
 <script>
-```var input = document.getElementById("myInput");
+var input = document.getElementById("myInput");
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 75) {
    event.preventDefault();
@@ -27,18 +27,20 @@ input.addEventListener("keyup", function(event) {
   }
 });
 var input = document.getElementById("myInput");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 84) {
-   event.preventDefault();
-   document.getElementById("t").click();
-  }
-});```
-document.addEventListener("keypress", function onPress(event) {
-    if (event.key === "z" && event.ctrlKey) {
-        // Do something awesome
-        alert("Ctrl-Z");
-    }
-});
+	input.addEventListener("keyup", function(event) {
+		if (event.keyCode === 84) {
+			event.preventDefault();
+			document.getElementById("t").click();
+		}
+	});
+var input = document.getElementById("myInput");
+	input.addEventListener("keyup", function(event) {
+		if (event.keycode === 67) {
+			event.preventDefault();
+			document.getElementById("c").click();
+		}
+	});
+
 
 </script>
 
