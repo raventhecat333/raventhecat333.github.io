@@ -32,9 +32,9 @@ input.addEventListener("keyup", function(event) {
    document.getElementById("t").click();
   }
 });```
-document.onkeydown = function(evt) {
-    evt = evt || window.event;
-    if (evt.ctrlKey && evt.keyCode == 90) {
+document.addEventListener("keypress", function onPress(event) {
+    if (event.key === "z" && event.ctrlKey) {
+        // Do something awesome
         alert("Ctrl-Z");
     }
 };
