@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>soundboard V2</title>
-</head>
-<body>
-	<audio id="sound1" src="sound/timestop.mp3"></audio>
-	<audio id="sound2" src="sound/error.mp3"></audio>
-	<audio id="sound3" src="sound/curb.mp3"></audio>
-	<audio id="sound4" src="sound/kingcrimson.mp3"></audio>
-	<audio id="sound5" src="sound/tacobell.mp3"></audio>
-	<button id="t" onclick="document.getElementById('sound1').play()">timestop "t"</button>
- 	<button id="e" onclick="document.getElementById('sound2').play()">error "e"</button>
-	<button id="c" onclick="document.getElementById('sound3').play()">curb "c"</button>
-	<button id="kc" onclick="document.getElementById('sound4').play()">king crimson "k"</button>
-	<button id="b" onclick="document.getElementById('sound5').play()">tacobell "b"</button>
-	<form>
-	<input id="myInput" type="reset" value="reset">
-	</form>
+	<head>
+		<title>soundboard V2</title>
+	</head>
+	<body>
+		<audio id="sound1" src="sound/timestop.mp3"></audio>
+		<audio id="sound2" src="sound/error.mp3"></audio>
+		<audio id="sound3" src="sound/curb.mp3"></audio>
+		<audio id="sound4" src="sound/kingcrimson.mp3"></audio>
+		<audio id="sound5" src="sound/tacobell.mp3"></audio>
+		<button id="t" onclick="document.getElementById('sound1').play()">timestop "t"</button>
+ 		<button id="e" onclick="document.getElementById('sound2').play()">error "e"</button>
+		<button id="c" onclick="document.getElementById('sound3').play()">curb "c"</button>
+		<button id="kc" onclick="document.getElementById('sound4').play()">king crimson "k"</button>
+		<button id="b" onclick="document.getElementById('sound5').play()">tacobell "b"</button>
+		<form>
+			<input id="myInput" type="reset" value="reset">
+		</form>
 <script>
 ```var input = document.getElementById("myInput");
 input.addEventListener("keyup", function(event) {
