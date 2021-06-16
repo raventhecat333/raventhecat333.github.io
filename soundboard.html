@@ -10,15 +10,19 @@
 		<audio id="sound3" src="sound/curb.mp3"></audio>
 		<audio id="sound4" src="sound/kingcrimson.mp3"></audio>
 		<audio id="sound5" src="sound/tacobell.mp3"></audio>
+		<audio id="sound6" src="sound/goldenwind.mp3"></audio>
 		<button id="t" onclick="document.getElementById('sound1').play()">timestop "t"</button>
  		<button id="e" onclick="document.getElementById('sound2').play()">error "e"</button>
 		<button id="c" onclick="document.getElementById('sound3').play()">curb "c"</button>
 		<button id="kc" onclick="document.getElementById('sound4').play()">king crimson "k"</button>
 		<button id="b" onclick="document.getElementById('sound5').play()">tacobell "b"</button>
+		<button id="g" onclick="document.getElementById('sound6').play()">golden wind "g"</button>
+		
 		<form>
 			<input id="myInput" type="reset" value="...">
 		</form>
 <script>
+//this is king crimson
 var input = document.getElementById("myInput");
 	input.addEventListener("keyup", function(event) {
 		if (event.keyCode === 75) {
@@ -26,6 +30,7 @@ var input = document.getElementById("myInput");
 			document.getElementById("kc").click();
 		}
 	});
+//timestop
 var input = document.getElementById("myInput");
 	input.addEventListener("keyup", function(event) {
 		if (event.keyCode === 84) {
@@ -33,6 +38,7 @@ var input = document.getElementById("myInput");
 			document.getElementById("t").click();
 		}
 	});
+///this is curb
 var input = document.getElementById("myInput");
 	input.addEventListener("keyup", function(event) {
 		if (event.keycode === 67) {
@@ -40,8 +46,30 @@ var input = document.getElementById("myInput");
 			document.getElementById("c").click();
 		}
 	});
-
-
+//golden wind
+var input = document.getElementById("myInput");
+	input.addEventListener("keyup", function(event) {
+		if (event.keyCode === 71) {
+			event.preventDefault();
+			document.getElementById("g").click();
+		}
+	});
+//bell
+var input = document.getElementById("myInput");
+	input.addEventListener("keyup", function(event) {
+		if (event.keyCode === 66) {
+			event.preventDefault();
+			document.getElementById("b").click();
+		}
+	});
+//error
+var input = document.getElementById("myInput");
+	input.addEventListener("keyup", function(event) {
+		if (event.keyCode === 69) {
+			event.preventDefault();
+			document.getElementById("e").click();
+		}
+	});
 </script>
 
 </body>
