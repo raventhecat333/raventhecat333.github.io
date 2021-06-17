@@ -1,0 +1,36 @@
+<html>
+  <head>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </head>
+  <body>
+  
+  <script>
+function sendWebhook() {
+    var content = {"value1" : "test data"};
+    var url = "https://discord.com/api/webhooks/855078416466051113/nRCXS6iX58I_z0W0PldISYdVvG3t7i1A23Hi9EdlVkQXSMDMXhN2tJ48r4blLV8EW043";
+    var options =  {
+    "method" : "post",
+    "contentType" : "application/json",
+    "payload" : JSON.stringify(content)
+};
+return UrlFetchApp.fetch(url, options);
+}
+</script>
+<input id="contact-submit" type="button" class="btn btn-transparent" value="Submit" onclick="sendWebhook()" />
+  
+  
+  
+  
+  
+  
+  
+  </body>
+</html>
