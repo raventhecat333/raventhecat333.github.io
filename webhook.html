@@ -1,36 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Webhook Tutorial</title>
   </head>
   <body>
-  
-  <script>
-function sendWebhook() {
-    var content = {"value1" : "test data"};
-    var url = "https://discord.com/api/webhooks/855078416466051113/nRCXS6iX58I_z0W0PldISYdVvG3t7i1A23Hi9EdlVkQXSMDMXhN2tJ48r4blLV8EW043";
-    var options =  {
-    "method" : "post",
-    "contentType" : "application/json",
-    "payload" : JSON.stringify(content)
-};
-return UrlFetchApp.fetch(url, options);
-}
-</script>
-<input id="contact-submit" type="button" class="btn btn-transparent" value="Submit" onclick="sendWebhook()" />
-  
-  
-  
-  
-  
-  
-  
+    <button onclick="sendMessage()">Send</button>
   </body>
+
+  <script>
+    function sendMessage() {
+      var request = new XMLHttpRequest();
+      request.open("POST", "https://discordapp.com/api/webhooks/676118118082281513/ZS5YcWhurzokBrKX9NgexqtxrJA5Pu2Bo4i7_JsIxC-JIbPBVhSZkcVVukGOro52rnQA");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      var params = {
+        username: "My Webhook Name",
+        avatar_url: "",
+        content: "The message to send"
+      }
+
+      request.send(JSON.stringify(params));
+    }
+  </script>
 </html>
