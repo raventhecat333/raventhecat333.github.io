@@ -28,5 +28,11 @@
 
       request.send(JSON.stringify(params));
     }
+        document.getElementById('Message').addEventListener('keypress', function(event) {
+        if (event.keyCode == 13) {
+            event.preventDefault();
+            document.getElementById("Message").click();
+        }
+    });
   </script>
 </html>
