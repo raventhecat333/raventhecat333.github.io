@@ -9,7 +9,7 @@
     <input id="Name" type="input" value="Envy's Domain" placeholder="Envy's Domain">
     <input id="Message" type="input" placeholder="Message here">
     <input id="PFP" type="input" value="https://cdn.discordapp.com/icons/814173270919479317/7ba38ec7637ce6695ce7f135bf1008d6.png?size=128">
-    <button onclick="sendMessage()">Send message</button>
+    <button id="submit" onclick="sendMessage()">Send message</button>
      
   </body>
 
@@ -17,7 +17,7 @@
          document.getElementById('Message').addEventListener('keypress', function(event) {
         if (event.keyCode == 13) {
             event.preventDefault();
-            document.getElementById("Message").click();
+            document.getElementById("submit").click();
         }
     });
     function sendMessage() {
