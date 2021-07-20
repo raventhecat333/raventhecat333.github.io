@@ -22,7 +22,8 @@
     });
     function sendMessage() {
       var request = new XMLHttpRequest();
-      request.open("POST", "document.getElementByID('webhookurl').value");
+      var url = document.getElementByID('webhookurl').value
+      request.open("POST", "url");
 
       request.setRequestHeader('Content-type', 'application/json');
 
