@@ -12,7 +12,7 @@
     <button id="submit" onclick="sendMessage()">Send message</button>
     <input id="webhook url" type="input" placeholder"put webhook url here" > 
   </body>
-
+https://discord.com/api/webhooks/830806729968189461/Yd7FvCHF3B2MWyTABhAHzHiqFKjrINVE_uVOr66MCOM8K_ulstTVBBfSfPOMpa53mA7O
   <script>
          document.getElementById('Message').addEventListener('keypress', function(event) {
         if (event.keyCode == 13) {
@@ -22,7 +22,7 @@
     });
     function sendMessage() {
       var request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/830806729968189461/Yd7FvCHF3B2MWyTABhAHzHiqFKjrINVE_uVOr66MCOM8K_ulstTVBBfSfPOMpa53mA7O");
+      request.open("POST", "document.getElementByID('webhook url').value");
 
       request.setRequestHeader('Content-type', 'application/json');
 
