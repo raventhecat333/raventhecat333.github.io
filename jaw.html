@@ -5,7 +5,36 @@
   <body>
   
   
-  
+  <!--
+I use this setup primarely on jsfiddle where I do not want to open chrome console while testing js code.
+example: https://jsfiddle.net/wybmxgop/1/
+-->
+
+<!-- a Mono-spaced font-->
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+<style>
+ul#console {
+  list-style-type: none;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  line-height: 25px;
+  padding-left: 5px;
+}
+ul#console li {
+  border-bottom: solid 1px #80808038;
+}
+</style>
+
+<ul id="console"><ul>
+
+<script>
+// adds entry to the html #console
+function log(txt){
+  var newLine = document.createElement("li");
+  newLine.innerHTML = (typeof txt === 'string') ? txt : JSON.stringify(txt, null, 4);
+  document.querySelector('#console').appendChild(newLine);
+}
+</script>
   
   
   
