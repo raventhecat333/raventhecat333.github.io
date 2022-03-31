@@ -25,7 +25,7 @@ class Fetch {
 
           blockType: Scratch.BlockType.REPORTER,
 
-          text: 'POST [BODY] to [URL]',
+          text: 'POST [BODY] to [URL] with [HEADERS]',
           arguments: {
             URL: {
               type: Scratch.ArgumentType.STRING,
@@ -37,7 +37,7 @@ class Fetch {
             },
             HEADERS: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'application/json'
+              defaultValue: ('Content-type', 'application/json')
             }
           }
         }
