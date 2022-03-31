@@ -34,6 +34,10 @@ class Fetch {
             BODY: {
               type: Scratch.ArgumentType.STRING,
               defaultValue: 'Hello'
+            },
+            HEADERS: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'application/json'
             }
           }
         }
@@ -47,7 +51,7 @@ class Fetch {
       .catch(err => '')
   }
 
-  post ({ URL, BODY }) {
+  post ({ URL, BODY, HEADERS }) {
     return fetch(URL, { method: 'POST', body: BODY })
       .then(res => res.text())
       .catch(err => '')
