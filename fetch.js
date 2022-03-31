@@ -34,11 +34,11 @@ class Fetch {
             BODY: {
               type: Scratch.ArgumentType.STRING,
               defaultValue: 'Hello'
-            },
-            HEADERS: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: ('Content-type', 'application/json')
             }
+           // HEADERS: {
+           //   type: Scratch.ArgumentType.STRING,
+           //   defaultValue: "'Content-type', 'application/json'"
+           // }
           }
         }
       ]
@@ -52,7 +52,7 @@ class Fetch {
   }
 
   post ({ URL, BODY, HEADERS }) {
-    return fetch(URL, { method: 'POST', body: BODY, header: HEADERS })
+    return fetch(URL, { method: 'POST', body: BODY, headers:"'Content-type', 'application/json'"  })
       .then(res => res.text())
       .catch(err => '')
   }
