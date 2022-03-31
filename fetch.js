@@ -52,7 +52,7 @@ class Fetch {
   }
 
   post ({ URL, BODY, HEADERS }) {
-    return fetch(URL, { method: 'POST', body: BODY })
+    return fetch(URL, { method: 'POST', body: BODY, header: HEADERS })
       .then(res => res.text())
       .catch(err => '')
   }
