@@ -11,13 +11,14 @@
 		<audio id="sound4" src="sound/kingcrimson.mp3"></audio>
 		<audio id="sound5" src="sound/tacobell.mp3"></audio>
 		<audio id="sound6" src="sound/bokudan.mp3"></audio>
+		<audio id="sound7" src="sound/hellomario.mp3"></audio>
 		<button id="t" onclick="document.getElementById('sound1').play()">timestop "t"</button>
  		<button id="e" onclick="document.getElementById('sound2').play()">error "e"</button>
 		<button id="c" onclick="document.getElementById('sound3').play()">curb "c"</button>
 		<button id="kc" onclick="document.getElementById('sound4').play()">king crimson "k"</button>
 		<button id="b" onclick="document.getElementById('sound5').play()">tacobell "b"</button>
 		<button id="g" onclick="document.getElementById('sound6').play()">killer queen click "g"</button>
-		
+		<button id="h" onclick="document.getElementById('sound7').play()">hello mario "h"</button>
 		<form>
 			<input id="mynput" type="reset" value="...">
 		</form>
@@ -68,6 +69,13 @@ var input = document.getElementById("myInput");
 		if (event.keyCode === 69) {
 			event.preventDefault();
 			document.getElementById("e").click();
+		}
+	});
+var input = document.getElementById("myInput");
+	input.addEventListener("keyup", function(event) {
+		if (event.keyCode === 72) {
+			event.preventDefault();
+			document.getElementById("h").click();
 		}
 	});
 </script>
