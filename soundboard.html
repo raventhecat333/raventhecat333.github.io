@@ -15,7 +15,7 @@
 		<button id="t" onclick="document.getElementById('sound1').play()">timestop "t"</button>
  		<button id="e" onclick="document.getElementById('sound2').play()">error "e"</button>
 		<button id="c" onclick="document.getElementById('sound3').play()">curb "c"</button>
-		<button id="kc" onclick="document.getElementById('sound4').play()"><img alt="king crimson skip" src="http://thinkingstiff.com/images/matt.jpg"></button>
+		<button id="close-image" onclick="document.getElementById('sound4').play()"><img alt="king crimson skip" src="http://thinkingstiff.com/images/matt.jpg"></button>
 		<button id="b" onclick="document.getElementById('sound5').play()">tacobell "b"</button>
 		<button id="g" onclick="document.getElementById('sound6').play()">killer queen click "g"</button>
 		<button id="h" onclick="document.getElementById('sound7').play()">hello mario "h"</button>
@@ -30,7 +30,7 @@ var input = document.getElementById("myInput");
 	input.addEventListener("keyup", function(event) {
 		if (event.keyCode === 75) {
 			event.preventDefault();
-			document.getElementById("kc").click();
+			document.getElementById("close-image").click();
 		}
 	});
 //timestop
